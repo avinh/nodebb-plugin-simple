@@ -1,0 +1,32 @@
+{
+  "name": "nodebb-plugin-simple",
+  "version": "1.0.0",
+  "description": "simple will give you embeds",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avinh/nodebb-plugin-simple"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "simple",
+    "embed"
+  ],
+  "author": {
+    "name": "avinh",
+    "email": "avinh@nodebb.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avinh/nodebb-plugin-simple/issues"
+  },
+  "readmeFilename": "README.md",
+  "nbbpm": {
+    "compatibility": "^3.2.0"
+  },
+  "dependencies": {
+    "lru-cache": "^2.7.0",
+    "moment": "^2.20.1"
+  }
+}

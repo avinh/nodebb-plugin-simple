@@ -1,0 +1,31 @@
+{
+	"id": "nodebb-plugin-simple",
+	"url": "https://github.com/avinh/nodebb-plugin-simple",
+	"library": "./library.js",
+	"hooks": [
+        {
+            "hook": "static:app.load",
+            "method": "onLoad"
+        },
+        { "hook": "filter:admin.header.build", "method": "admin.menu" }
+    ],
+    "scripts": [
+        "public/js/client.js"
+    ],    
+    "acpScripts": [
+        "public/js/admin.js"
+    ],
+	"scss": [
+        "public/scss/default.scss"
+	],
+    "modules":{
+        "../admin/plugins/simple.js": "public/js/admin.js",
+        "simple.js": "./public/js/simple.js"
+    },
+	"templates": "./public/templates",
+    "settingsRoute": "/admin/plugins/simple",
+	"admin": {
+        "route": "/plugins/simple",
+        "icon": "fa-cog"
+    }
+}
